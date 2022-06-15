@@ -1,7 +1,6 @@
 import { defineConfig } from 'cypress'
 
 export default defineConfig({
-  chromeWebSecurity: false,
   e2e: {
     baseUrl: 'https://furo-delta.vercel.app/furo',
     //baseUrl: 'http://localhost:3005/furo',
@@ -9,5 +8,8 @@ export default defineConfig({
     viewportHeight: 768,
     viewportWidth: 1366,
     chromeWebSecurity: false,
+    env: {
+      SECRET_WORDS: 'test test test test test test test test test test test junk',
+    },
   },
 })

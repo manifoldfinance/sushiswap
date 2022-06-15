@@ -7,7 +7,7 @@
     "dev": "next dev -p 3005",
     "lint": "eslint --fix . && next lint",
     "start": "next start",
-    "test": "start-server-and-test 'pnpm dev' 3005 'synpress run -cf test/e2e/config.json'"
+    "test": "start-server-and-test 'pnpm build && pnpm run --port 3005' 3005 'synpress run -cf cypress/cypress.config.ts'"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.0.0",

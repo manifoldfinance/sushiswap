@@ -8,8 +8,10 @@
 			"cypress-wait-until",
 			"@testing-library/cypress"
 		],
+		"isolatedModules": false,
 		"outDir": "./output",
 		"baseUrl": "../node_modules"
 	},
 	"include": ["**/*.*"],
+	"extends": "../tsconfig.json"
 }
